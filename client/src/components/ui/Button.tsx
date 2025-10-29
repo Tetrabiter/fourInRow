@@ -13,7 +13,7 @@ interface ButtonBaseInf {
 const ButtonBase : React.FC<ButtonBaseInf> = ({children , className , onClick , type , name , disabled}) =>{
     return(
         <button 
-            className={clsx(className)}
+            className={clsx('outline outline-amber-50 px-8 py-4 rounded-xl hover:bg-amber-50 hover:text-blue-500 duration-200', className)}
             onClick={onClick}
             name={name}
             type={type}
